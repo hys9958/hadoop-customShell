@@ -55,7 +55,7 @@ public class CustomShell extends Configured implements Tool {
     new SimpleDateFormat("yyyy-MM-dd HH:mm");
   protected static final SimpleDateFormat modifFmt =
     new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-  static final int BORDER = 2;
+  static final int BORDER =2;
   static {
     modifFmt.setTimeZone(TimeZone.getTimeZone("UTC"));
   }

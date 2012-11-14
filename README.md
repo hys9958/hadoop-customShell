@@ -1,7 +1,7 @@
 hadoop-customShell
 ==================
 Note : apache-hadoop shell command의 기능 보강.
-- cat, text시 snappy로 압축된 파일을 decompression으로 볼 수 있 는 기능.
+- cat, text시 snappy로 압축된 파일을 decompression으로 볼 수 있 는 기능.(확장자가 .snappy로 된 블럭압축된 파일)
 - ...추가예정.
 
 Compiling

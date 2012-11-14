@@ -14,7 +14,7 @@ Compiling
 	
 Install
 - 빌드 후 생성된 hadoop-customShell.jar를 $HAOOP_HOME/lib에 복사.
-$HADOOP_HOME/bin/hadoop edit.
+- $HADOOP_HOME/bin/hadoop edit.
 
 "
 	elif [ "$COMMAND" = "dfs" ] ; then

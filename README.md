@@ -20,6 +20,7 @@ Install
   		CLASS=org.apache.hadoop.fs.FsShell
   		HADOOP_OPTS="$HADOOP_OPTS $HADOOP_CLIENT_OPTS"		
 
+
 위 부분 아래 다음항복 추가.(append under item.)
 
 	elif [ "$COMMAND" = "cufs" ] ; then

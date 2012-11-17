@@ -713,14 +713,11 @@ public class CustomShell extends Configured implements Tool {
 	    return this.snappyCodec;
 	}
 	private boolean isSnappy(String fileName){
-		boolean result = false;
-	    int pos = fileName.lastIndexOf('.');
-	    if(pos != -1){
-	        String extension = fileName.substring(pos + 1);
-	        if(extension.equals("snappy")){
-	        	result = true;
-	        }
-	    }
-	    return result;
+      String reversedFilename = new StringBuffer(fileName).reverse().toString();
+      if (reversedFilename.startsWith(new StringBuffer(getSnappyCodec().getDefaultExtension()).reverse().toString())) {
+       	return true;
+      }else {
+       	return false;
+      }
 	}
 }
